@@ -119,7 +119,7 @@ nav svg{
 }
 .blog-cards{
   display: flex;
-  margin-left: 70px;
+  margin:0 70px;
   margin-top: 30px;
 }
 .blog-image img{
@@ -128,6 +128,9 @@ nav svg{
 }
 .blog-card{
   display: flex;
+}
+.blog-card:last-child{
+  margin-left:100px;
 }
 .blog-content{
   background-color: #fff;
@@ -148,22 +151,16 @@ nav svg{
 }
 .blog-bottom{
   position: absolute;
-  top:1715px;
-  left: 500px;
+  transform: translate(280px,320px);
 }
 .blog-author b
 {
- position: absolute;
- top: 1720px;
- width:120px;
- left: 580px;
+  position: absolute;
+  /* width:120px; */
+  transform: translate(-220px, 325px);
+  
 }
-.blog-cards div:last-child .blog-bottom{
-  left:1200px;
-}
-.blog-cards div:last-child .blog-author b{
-  left:1270px;
-}
+
 
 
 /* FAQ SECTION  */
@@ -243,14 +240,9 @@ nav svg{
   font-weight: 500;
 }
 
-
 form {
-  /* display:flex;
-  flex-direction:row; */
   height: 55px;
-  /* border:2px solid grey; */
   border-radius: 22px;
-  /* padding:2px; */
   background-color: #E9EDFF;
 }
 
@@ -339,3 +331,205 @@ button {
 .logos-list .list-items:first-child{
   border-right: 1px solid #fff;
 } 
+
+@media screen and (max-width: 700px){
+
+  header{
+    height: 800px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .logo{
+    width: 20%;
+    margin-left:10%;
+    /* margin-left: 70px; */
+  }
+
+  .header-text>img{
+    display: none;
+  }
+  br{
+    display: none;
+  }
+  .header-text{
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+  }
+  .header-text h2{
+    font-size: 36px;
+  }
+
+  .header-image{
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: 80%;
+    float: right;
+  }
+  .companies{
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .company-items{
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .api-heading{
+    font-weight: bolder;
+    margin-left: 130px;
+    font-style: bold;
+  }
+
+  .api{
+    margin-left:0;
+    margin-top: 50px;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .card{
+    width: 70%;
+    height: 220px;
+    margin-left: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .card:last-child{
+    display: none;
+  }
+
+  .blog-cards{
+    /* display: none; */
+    flex-direction: column;
+    height: 100%;
+  }
+  .blog-image img{
+    height: 285px;
+  }
+  .blog-card:last-child{
+    margin-left: 0;
+  }
+  .blog-card{
+    height: 288px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .blog-bottom{
+    transform: translate(250px, 260px);
+  }
+  .blog-author b{
+    transform: translate(-200px, 265px);
+    width: 150px;
+    font-size: 14px;
+  }
+  .faq-image{
+    display: none;
+  }
+   
+  .faq-section{
+    height: 270px;
+  }
+
+  .download-section{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .faq-content button{
+    font-size: 10px;
+  }
+
+  .download-content{
+    margin-top: 20px;
+  }
+
+  .download-content h1{
+    font-size: 200%;
+    margin-top: 0px;
+    margin-right: 90px;
+  }
+  .download-content span{
+    font-size: 50%;
+  }
+
+  .download-email{
+    float: none;
+    margin: 0px;
+    padding-left: 0px;
+    margin-left: 60px;
+    padding-bottom: 0px;
+  }
+
+  form {
+    display:flex;
+    flex-direction:row;
+    height: 40px;
+    width: 500px;
+    border:2px solid grey;
+    border-radius: 22px;
+    padding:2px;
+    background-color: #E9EDFF;
+  }
+
+  input{
+    width: 400px;
+  }
+
+  .download-email button {
+    padding: 0;
+    color:white;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #5A31FC;
+  }
+
+  .footer-logo{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-left: 0px;
+  }
+  .footer-section{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-right{
+    margin-top: 0px;
+    margin-left: 100px;
+    /* display: none; */
+  }
+  .list{
+    margin: 20px 50px;
+  }
+  .footer-rights{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .footer-logos{
+    margin-top: 0;
+    
+  }
+  .logos-list{
+    margin-top: 0;
+    margin-left: 100px;
+  }
+
+}
